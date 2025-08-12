@@ -62,37 +62,37 @@ Este projeto utilizou algumas técnicas avançadas que estou estudando. Alguns e
 - **Algoritmo de busca binária na função `maquina_adivinha()`**
     Essa função faz o computador “adivinhar” seu número usando a técnica de busca binária, que divide repetidamente o intervalo de possibilidades ao meio, ajustando os palpites conforme suas respostas. Isso garante uma busca muito eficiente.
 
-```python
-def maquina_adivinha():
-    print('Pense em um número que vou tentar acertar.')
-    minimo, maximo, limite = dificuldade()
-    tentativas = 0
-    acertou = False
-
-    regras()
-
-    while minimo <= maximo:
-        palpite = (minimo + maximo) // 2
-        tentativas += 1
-        print(f'Meu palpite é: {palpite}')
-        resposta = input("É esse o número? (+ / - / = / se precisar de ajuda digite: ? ): ")
-
-        if resposta == '=':
-            limpar_tela()
-            print(f'\033[1;49;32mAcertei o número em {tentativas} tentativas!\033[0m')
-            acertou = True
-            break
-        elif resposta == '+':
-            minimo = palpite + 1
-        elif resposta == '-': 
-            maximo = palpite - 1
-        elif resposta == '?':
-            regras()
-        else:
-            print("\033[1;49;31mResponda apenas com '=', '+', '-' ou '?'\033[0m")
-    if not acertou:
-        print('\033[1;49;31mAlgo deu errado! Suas respostas não batem com as possibilidades possíveis.\033[0m')
-```
+    ```python
+    def maquina_adivinha():
+        print('Pense em um número que vou tentar acertar.')
+        minimo, maximo, limite = dificuldade()
+        tentativas = 0
+        acertou = False
+    
+        regras()
+    
+        while minimo <= maximo:
+            palpite = (minimo + maximo) // 2
+            tentativas += 1
+            print(f'Meu palpite é: {palpite}')
+            resposta = input("É esse o número? (+ / - / = / se precisar de ajuda digite: ? ): ")
+    
+            if resposta == '=':
+                limpar_tela()
+                print(f'\033[1;49;32mAcertei o número em {tentativas} tentativas!\033[0m')
+                acertou = True
+                break
+            elif resposta == '+':
+                minimo = palpite + 1
+            elif resposta == '-': 
+                maximo = palpite - 1
+            elif resposta == '?':
+                regras()
+            else:
+                print("\033[1;49;31mResponda apenas com '=', '+', '-' ou '?'\033[0m")
+        if not acertou:
+            print('\033[1;49;31mAlgo deu errado! Suas respostas não batem com as possibilidades possíveis.\033[0m')
+    ```
 - **Códigos ANSI para colorir o terminal**
     Sequências como `\033[1;49;33m` são códigos ANSI usados para aplicar cores e estilos na saída do terminal, tornando a interface mais visual e agradável.
 
@@ -130,3 +130,4 @@ Para ver todos os meus projetos, visite meu perfil no GitHub:
 Obrigado e até mais, terráqueos! 🖖🏻
 
 ---
+
