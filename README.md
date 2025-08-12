@@ -104,7 +104,8 @@ Esse jogo foi feito para melhorar minhas habilidades em desenvolvimento python, 
 ---
 
 ### Imagem do jogo:
-Aqui está um exemplo da tela final do jogo Acerte o Número <img src="img/imagemExemplo01.png" width="500" alt="Exemplo da tela do jogo">
+Aqui está um exemplo da tela final do jogo Acerte o Número 
+<img src="img/imagemExemplo01.png" width="400" alt="Exemplo da tela do jogo">
 
 ### Licença:
 Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
@@ -130,4 +131,5 @@ Para ver todos os meus projetos, visite meu perfil no GitHub:
 Obrigado e até mais, terráqueos! 🖖🏻
 
 ---
+
 
